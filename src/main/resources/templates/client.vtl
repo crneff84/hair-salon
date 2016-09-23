@@ -8,6 +8,11 @@
   <label for="name">Client Name</label>
   <input id="name" name="name" type="text">
   <button type="submit" class="btn btn-info">Update Client Name</button>
+</form>
+
+<form action="/stylists/$client.getStylistId()/clients/$client.getId()/delete" method="post">
+  <button type="submit" class="btn btn-danger" id="delete-client">Delete Client</button>
+</form>
 
 <a href="/">Back to Home Page</a>
 <br>
