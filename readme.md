@@ -23,7 +23,7 @@ _This application allows a hair salon to store and access their current staff an
 * __PSQL Commands to initialize database__
 * __In PSQL:__
 * __CREATE DATABASE hair_salon;__
-* __CREATE TABLE stylists (id serial PRIMARY KEY, name varchar, specialization varchar);__
+* __CREATE TABLE stylists (id serial PRIMARY KEY, name varchar, specialty varchar);__
 * __CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylistId varchar);__
 
 ## Known Bugs

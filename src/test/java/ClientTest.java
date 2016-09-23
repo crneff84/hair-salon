@@ -82,7 +82,7 @@ public class ClientTest {
 
   @Test
   public void save_savesStylistIdIntoDB_true() {
-    Stylist testStylist = new Stylist("Fred", "Curly hair", 1);
+    Stylist testStylist = new Stylist("Fred", "Curly hair");
     testStylist.save();
     Client testClient = new Client("George", testStylist.getId());
     testClient.save();
