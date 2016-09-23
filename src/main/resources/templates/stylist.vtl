@@ -4,7 +4,7 @@
 <h3>Clients:</h3>
 <ul>
   #foreach ($client in $stylist.getClients())
-    <li><a href="/clients/$client.getId()">$client.getName()</a></li>
+    <li><a href="/stylists/$stylist.getId()/clients/$client.getId()">$client.getName()</a></li>
   #end
 </ul>
 
