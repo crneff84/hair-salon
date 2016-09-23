@@ -1,6 +1,10 @@
 <h1>Client: $client.getName()</h1>
 
+#if($stylist.getId() > 0)
 <h3>Assigned Stylist: $stylist.getName()</h3>
+#else
+<h3>No Stylist assigned</he>
+#end
 
 <h3>Edit Client Name:</h3>
 

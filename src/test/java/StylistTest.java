@@ -118,4 +118,13 @@ public class StylistTest {
     testStylist.updateSpecialty("Grooming");
     assertEquals("Grooming", Stylist.find(testStylist.getId()).getSpecialty());
   }
+
+  @Test
+  public void delete_deletesStylist_true() {
+    Stylist testStylist = new Stylist("George", "Shaving");
+    testStylist.save();
+    int testStylistId = testStylist.getId();
+    testStylist.delete();
+    assertEquals(null, Stylist.find(testStylistId));
+  }
 }
